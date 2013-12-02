@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">uielements</string>
+    <string name="open_security_settings">Continue</string>
+    <string name="enable_security_instructions">To proceed, enable Unknown Sources on the next screen as shown below.</string>
+    <string name="enable_security_instructions_pre_11">To proceed, enable Unknown Sources on the next screen as shown below.</string>
+    <string name="enable_security_instructions_post_10">To proceed, scroll down and enable Unknown Sources on the next screen as shown below.</string>
+    <string name="unknown_sources">Launch \'Unknown Sources\'</string>
+    <string name="select_install_fennec">Launch \'Select/Install Fennec\'</string>
+    <string name="pre_honeycomb">Show screen for pre HoneyComb (OS:3.0 / API:11) devices</string>
+    <string name="post_gingerbread">Show screen for post Ginergerbread (MR1) (OS: 2.3.3 / API: 10) devices</string>
+    <string name="device_specific">Launch device specific version</string>
+    <string name="find_runtime">Find fennec runtime</string>
+    <string name="no_runtime_found">Show runtime not found screen (device specific)</string>
+    <string name="no_runtime_found_play_store">Show runtime not found screen, play store detected</string>
+    <string name="no_runtime_found_no_play_store">Show runtime not found screen, no play store detected</string>
+    <string name="runtime_not_found">A webapp runtime hasn\'t been found. Download Firefox for Android to use this
+        webapp.
+    </string>
+    <string name="runtime_not_found_play_store">Download Firefox from the Google Play store</string>
+    <string name="runtime_not_found_no_play_store">Download Firefox from the web</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="next" type="id"/>
+    <item name="unknown_sources_instructions" type="id"/>
+    <item name="unknown_sources_help" type="id"/>
+    <item name="unknown_sources" type="id"/>
+    <item name="select_install_fennec" type="id"/>
+    <item name="pre_honeycomb" type="id"/>
+    <item name="post_gingerbread" type="id"/>
+    <item name="device_specific" type="id"/>
+    <item name="find_runtime" type="id"/>
+    <item name="no_runtime_found" type="id"/>
+    <item name="no_runtime_found_play_store" type="id"/>
+    <item name="no_runtime_found_no_play_store" type="id"/>
+    <item name="no_runtime_found_device_specific" type="id"/>
+</resources>
