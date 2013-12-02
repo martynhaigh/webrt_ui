@@ -6,6 +6,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
+import android.widget.Toast;
 
 public class UnknownSourcesActivity extends Activity {
 
@@ -34,8 +35,15 @@ public class UnknownSourcesActivity extends Activity {
                 assignButtonAction();
             }
         });
+    }
 
-
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (isNonPlayAppInstallationAllowed()) {
+            Toast.makeText(this, "installation from 'Unknown Sources' enabled", Toast.LENGTH_SHORT).show();
+        //    setContentView(R.layout.unknown_sources_enabled);
+        }
     }
 
     private void assignButtonAction() {
@@ -60,15 +68,18 @@ public class UnknownSourcesActivity extends Activity {
     }
 
     private void startActivityIfUnknownSourcesUnchecked() {
-        boolean isNonPlayAppAllowed = false;
-        try {
-            isNonPlayAppAllowed = Settings.Secure.getInt(getContentResolver(), Settings.Secure.INSTALL_NON_MARKET_APPS) == 1;
-        } catch (Settings.SettingNotFoundException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
-        if (!isNonPlayAppAllowed) {
+        if (!isNonPlayAppInstallationAllowed()) {
             Intent intent = new Intent(this, UnknownSourcesActivity.class);
             startActivity(intent);
+        }
+    }
+
+    private boolean isNonPlayAppInstallationAllowed() {
+        try {
+            return Settings.Secure.getInt(getContentResolver(), Settings.Secure.INSTALL_NON_MARKET_APPS) == 1;
+        } catch (Settings.SettingNotFoundException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            return false;
         }
     }
 

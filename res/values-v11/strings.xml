@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="enable_security_instructions">To proceed, scroll down and enable Unknown Sources on the next screen as shown below.</string>
+    <string name="enable_security_instructions">To proceed, scroll down and enable Unknown Sources on the next screen as shown below, accept the popup box, then press the back button.</string>
 </resources>

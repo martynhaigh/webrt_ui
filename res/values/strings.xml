@@ -2,9 +2,9 @@
 <resources>
     <string name="app_name">uielements</string>
     <string name="open_security_settings">Continue</string>
-    <string name="enable_security_instructions">To proceed, enable Unknown Sources on the next screen as shown below.</string>
-    <string name="enable_security_instructions_pre_11">To proceed, enable Unknown Sources on the next screen as shown below.</string>
-    <string name="enable_security_instructions_post_10">To proceed, scroll down and enable Unknown Sources on the next screen as shown below.</string>
+    <string name="enable_security_instructions">To proceed, enable Unknown Sources on the next screen as shown below, accept the popup box, then press the back button.</string>
+    <string name="enable_security_instructions_pre_11">To proceed, enable Unknown Sources on the next screen as shown below, accept the popup box, then press the back button.</string>
+    <string name="enable_security_instructions_post_10">To proceed, scroll down and enable Unknown Sources on the next screen as shown below, accept the popup box, then press the back button.</string>
     <string name="unknown_sources">Launch \'Unknown Sources\'</string>
     <string name="select_install_fennec">Launch \'Select/Install Fennec\'</string>
     <string name="pre_honeycomb">Show screen for pre HoneyComb (OS:3.0 / API:11) devices</string>
@@ -19,4 +19,5 @@
     </string>
     <string name="runtime_not_found_play_store">Download Firefox from the Google Play store</string>
     <string name="runtime_not_found_no_play_store">Download Firefox from the web</string>
+    <string name="unknown_sources_enabled">Installation from \'Unknown Sources\' is enabled</string>
 </resources>

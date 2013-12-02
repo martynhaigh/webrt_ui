@@ -17,7 +17,6 @@ public class LaunchFennec extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.find_runtime);
 
-
         findViewById(R.id.find_runtime).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
